@@ -1,5 +1,10 @@
 #INPUT
-angka = int(input('ketik angka:'))
+try:
+    angka = int(input('ketik angka:'))
+except (ValueError,TypeError,KeyboardInterrupt,KeyError):
+    print('harus dalam bentuk angka')
+
+
 jenisangka = []
 
 #LOGIC
